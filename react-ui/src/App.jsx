@@ -17,12 +17,16 @@ import ShowUser from './components/conditional/ShowUser';
 import DirectFather from './components/communication/DirectFather';
 import IndirectFather from './components/communication/IndirectFather';
 import Input from './components/form/Input';
+import Counter from './components/counter/Counter';
 
 export default () => (
     <div className="App">
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+            <Card title="#13 - Counter exemple, with class" color="#F17D80">
+                <Counter initialNumber={23}></Counter>
+            </Card>
             <Card title="#12 - Controlled components">
                 <Input></Input>
             </Card>

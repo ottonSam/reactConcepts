@@ -16,12 +16,16 @@ import PairOrOdd from './components/conditional/PairOrOdd';
 import ShowUser from './components/conditional/ShowUser';
 import DirectFather from './components/communication/DirectFather';
 import IndirectFather from './components/communication/IndirectFather';
+import Input from './components/form/Input';
 
 export default () => (
     <div className="App">
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+            <Card title="#12 - Controlled components">
+                <Input></Input>
+            </Card>
             <Card title="#11 - Indirect communication" color="#542733">
                 <IndirectFather></IndirectFather>
             </Card>

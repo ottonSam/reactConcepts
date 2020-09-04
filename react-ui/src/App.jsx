@@ -18,12 +18,16 @@ import DirectFather from './components/communication/DirectFather';
 import IndirectFather from './components/communication/IndirectFather';
 import Input from './components/form/Input';
 import Counter from './components/counter/Counter';
+import MegaSena from './components/mega/MegaSena';
 
 export default () => (
     <div className="App">
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+            <Card title="#14 - MegaSena numbers Generate" color="#1FDA9A">
+                <MegaSena></MegaSena>
+            </Card>
             <Card title="#13 - Counter exemple, with class" color="#F17D80">
                 <Counter initialNumber={23}></Counter>
             </Card>

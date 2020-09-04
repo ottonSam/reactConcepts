@@ -6,7 +6,7 @@ function generateNumberNotRepeat(min, max, arr) {
 
 };
 
-function generateXNumbers(n) {
+export default function generateXNumbers(n) {
     const numbers = Array(n)
         .fill(0)
         .reduce((nums) => {
@@ -19,4 +19,3 @@ function generateXNumbers(n) {
         return numbers;
 };
 
-console.log(generateXNumbers(7));

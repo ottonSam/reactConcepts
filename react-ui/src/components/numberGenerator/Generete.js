@@ -1,3 +1,22 @@
-const generate = () => {
-    return parseInt(Math.random() * (61 - 0) + 61);
-}
+function generateNumberNotRepeat(min, max, arr) {
+    const random = parseInt(Math.random() * (max + 1 - min)) + min
+    return arr.includes(random) ? 
+    generateNumberNotRepeat(min, max, arr) : 
+    random;
+
+};
+
+function generateXNumbers(n) {
+    const numbers = Array(n)
+        .fill(0)
+        .reduce((nums) => {
+            const newNumber =  generateNumberNotRepeat(1, 60, nums);
+            return [ ...nums, newNumber ]
+
+        }, [])
+        .sort((n1, n2) => n1 - n2);
+
+        return numbers;
+};
+
+console.log(generateXNumbers(7));
